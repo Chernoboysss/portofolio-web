@@ -1,0 +1,35 @@
+.text-justify {
+    text-align: justify;
+}
+
+.img-thumbnail {
+    width: 200%;
+    height: auto;
+}
+
+
+
+.header .img-holder img {
+    max-width: 300px; 
+    margin-top: 0; 
+}
+
+.header .infos .title {
+    font-size: 3rem; 
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.header .infos .subtitle {
+    color: #6c757d; 
+}
+
+/* .social-item i {
+    font-size: 24px; 
+    margin-right: 10px;
+    color: #ff6b6b;
+} */
+
+.social-item i:hover {
+    color: #ff4757; 
+}
