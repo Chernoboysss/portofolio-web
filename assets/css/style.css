@@ -8,21 +8,25 @@
 }
 
 
+.img-hero{
+    width: 20;
+    height: 50;
+}
 
-.header .img-holder img {
-    max-width: 300px; 
-    margin-top: 0; 
+/* .header .img-holder img {
+    max-width: 300px;
+    margin-top: 0;
 }
 
 .header .infos .title {
-    font-size: 3rem; 
+    font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 10px;
 }
 
 .header .infos .subtitle {
-    color: #6c757d; 
-}
+    color: #6c757d;
+} */
 
 /* .social-item i {
     font-size: 24px; 
@@ -31,5 +35,345 @@
 } */
 
 .social-item i:hover {
-    color: #ff4757; 
+    color: #ff4757;
+}
+
+
+
+.achievement-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.achievement-section h2 {
+    color: #ff7a57;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.achievement-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.achievement-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-item {
+    display: flex;
+    flex-direction: column; /* Mengubah layout menjadi kolom */
+    align-items: center;
+    text-align: center; /* Menyelaraskan teks di tengah */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Menetapkan lebar tetap */
+    height: 250px; /* Menetapkan tinggi tetap */
+}
+
+.certification-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Memberi jarak antara gambar dan teks */
+}
+
+.certification-item h4 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.certification-item p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+
+/* Style untuk section */
+#about {
+    background-color: #f4f4f4; /* Warna abu-abu terang untuk section About */
+    padding: 60px 0;
+}
+
+#portfolio {
+    background-color: #f4f4f4; /* Warna krem untuk section Skills */
+    padding: 60px 0;
+}
+
+/* Style tambahan untuk teks dan elemen di dalam section */
+#about .title, #service .section-title, #skilss .section-title {
+    color: #333; /* Warna teks untuk judul section */
+}
+
+#about p, #service p, #skilss p {
+    color: #666; /* Warna teks untuk paragraf */
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+}
+
+.page-footer {
+    background-color: #1c1e22;
+    color: #dcdcdc;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+
+.page-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Kolom Footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+/* Garis Horizontal */
+hr {
+    border: 0.5px solid #333;
+    margin: 20px 0;
+}
+
+/* Ikon Sosial Media */
+.social-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #dcdcdc;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 20px;
+    }
+}
+
+
+#about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff7a57;
+}
+
+#skilss h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff7a57;
+
+}
+
+#skilss h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#portfolio h2 {
+    color: #ff7a57;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrapper img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-infos {
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-infos h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay-infos p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.overlay-infos a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.overlay-infos a:hover {
+    color: #ff9800;
+}
+
+#portfolio {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#portfolio h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.portfolio-item {
+    margin-bottom: 20px; /* Spasi antar item */
+    text-align: center; /* Agar teks rata tengah */
+}
+
+.img-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Spasi antara gambar dan deskripsi */
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease; /* Tambahan efek hover jika diinginkan */
+}
+
+.description {
+    color: #333; /* Warna teks */
+}
+
+.description h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Efek hover pada gambar (opsional) */
+.img-wrapper:hover img {
+    transform: scale(1.05); /* Zoom-in efek */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    gap: 50px; /* Memberi jarak antar kolom */
+    align-items: center; /* Menjaga konten tetap sejajar secara vertikal */
+}
+
+.footer-col {
+    text-align: center; /* Memusatkan konten dalam masing-masing kolom */
+    flex: 1; /* Membuat kolom proporsional jika diperlukan */
 }
