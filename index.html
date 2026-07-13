@@ -1,523 +1,817 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="Muhamad Fadillah">
-        <title>Muhamad Fadillah</title>
-        <link rel="icon" type="image/png" href="assets/imgs/IMG_1712.jpg">
-        <link rel="stylesheet"
-            href="assets/vendors/themify-icons/css/themify-icons.css">
-        <link rel="stylesheet" href="assets/css/steller.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-            rel="stylesheet">
-    </head>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhamad Fadillah — Video Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0b0e11;
+    --bg-alt: #12161b;
+    --bg-card: #151a20;
+    --fg: #f0ede6;
+    --fg-dim: #9ba3a8;
+    --fg-faint: #5c6469;
+    --amber: #d4a24c;
+    --teal: #3e6b63;
+    --line: rgba(240,237,230,0.10);
+    --line-strong: rgba(240,237,230,0.22);
+    --radius: 2px;
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-            data-spy="affix" data-offset-top="0">
-            <div class="container">
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  *{margin:0;padding:0;box-sizing:border-box;}
 
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Tentang Saya</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skilss">Skill</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sertifikasi">Sertifikasi</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
 
-        <!-- Page Header -->
-        <header class="header" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="infos">
-                            <h6 class="subtitle">Hallo, nama saya</h6>
-                            <h1 class="title display-4 font-weight-bold">Muhamad
-                                Fadillah</h1>
+  body{
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
 
-                            <!-- Tombol Download -->
-                            <div class="buttons pt-3">
-                                <a href="assets/CV-Muhamad Fadillah.pdf"
-                                    class="btn btn-dark rounded"
-                                    download="CV-MUHAMAD-FADILLAH.pdf"> DOWNLOAD
-                                    CV </a>
-                            </div>
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%; display:block;}
 
-                            <!-- Media Sosial -->
-                            <div class="socials mt-4">
-                                <a class="social-item"
-                                    href="https://www.facebook.com/tamami.albar/"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a class="social-item"
-                                    href="https://www.instagram.com/mhmd.fdlhh/"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="social-item"
-                                    href="https://www.tiktok.com/@fadilajadeeh?lang=id-ID"><i
-                                        class="fab fa-tiktok"></i></a>
-                                <a class="social-item"
-                                    href="https://github.com/Chernoboysss"><i
-                                        class="fab fa-github"></i></a>
-                                <a class="social-item"
-                                    href="https://www.linkedin.com/in/muhamad-fadillah-15963b2ba/"><i
-                                        class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
+  ::selection{background:var(--amber); color:#0b0e11;}
 
-                    <!-- Bagian Gambar -->
-                    <div class="col-md-6 text-center">
-                        <div class="img-hero img-holder">
-                            <img src="assets/imgs/IMG_1712.jpg"
-                                alt="Foto Profil"
-                                class="img-fluid rounded-circle shadow-lg pt-4"
-                                width="50%" height="50%"
-                                >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End of Page Header -->
+  :focus-visible{
+    outline: 2px solid var(--amber);
+    outline-offset: 3px;
+  }
 
-        <!-- About section -->
-        <section id="about" class="section">
-            <h2 class="text-center">TENTANG SAYA</h2>
-            <div class="container">
-                <div class="row text-center text-md-left">
-                    <div class="col-md-3">
-                        <img src="assets/imgs/IMG_1712.jpg" alt="Muhamad Fadillah"
-                            class="img-thumbnail mb-4">
-                    </div>
-                    <div class="pl-md-4 col-md-9">
-                        <p class=" text-justify">
-                            Nama saya Muhammad Fadillah, seorang mahasiswa
-                            berusia 21 tahun di Universitas Bina Sarana
-                            Informatika, Fakultas Teknik Informatika, dengan
-                            jurusan Sistem Informasi. Saya memiliki minat yang
-                            mendalam dalam dunia coding, yang sering saya
-                            lakukan baik untuk menyelesaikan tugas kuliah maupun
-                            mengembangkan portofolio pribadi. Keterampilan utama
-                            yang saya miliki meliputi kemampuan berpikir
-                            analitis, efisiensi kerja, serta keahlian dalam
-                            memahami dan menyelesaikan berbagai permasalahan
-                            teknis yang kompleks. Saya juga seorang pemain tim
-                            yang baik dengan kemampuan komunikasi yang kuat,
-                            yang mendukung saya dalam berkolaborasi dengan orang
-                            lain. Selain itu, interaksi saya yang intens dengan
-                            komputer telah memperkaya kemampuan saya dalam
-                            desain grafis dan pengeditan video. Sebagai pribadi
-                            yang pantang menyerah, saya selalu terbuka untuk
-                            mempelajari hal-hal baru demi pengembangan diri yang
-                            berkelanjutan.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of  About Sectoin -->
+  .wrap{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 32px;
+  }
 
-        <!-- Skills section -->
-        <section id="skilss" class="section">
-            <div class="container text-center">
-                <h2 class="text-center mb-2">SKILL</h2>
-                <h3>Apa yang saya kuasai</h3>
-                <p class="pb-2"> berpikir analitis, efisien, serta
-                    kemampuan untuk memahami dan memperbaiki masalah teknis yang
-                    kompleks</p>
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--amber);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:18px;
+    height:1px;
+    background:var(--amber);
+    display:inline-block;
+  }
 
-                <div class="row d-flex justify-content-center">
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="custom-card card border">
-                            <div class="card-body">
-                                <i class="icon ti-html5"></i>
-                                <h5>Web Developer</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="custom-card card border">
-                            <div class="card-body">
-                                <i class="icon ti-video-camera"></i>
-                                <h5>Video Editor</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-4">
-                        <div class="custom-card card border">
-                            <div class="card-body">
-                                <i class="icon ti-paint-bucket"></i>
-                                <h5>Graphic Designer</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  h1,h2,h3{
+    font-family:var(--font-display);
+    font-weight:800;
+    letter-spacing:-0.01em;
+  }
 
-            <div class="container text-center">
-                <p class="mb-4">Saya memiliki keterampilan yang sesuai dengan jurusan saya, seperti analisis sistem dan pengembangan aplikasi. Selain itu, saya juga menguasai keterampilan tambahan seperti desain grafis dan pengeditan video</p>
-                <div class="row text-left">
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Html,Css,Javascript</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 80%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>80%</span></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Bootstrap5</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>70%</span></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Python(django,flask)</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 60%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>60%</span></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Adobe priemere</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>80%</span></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Adobe After effect</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 80%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>80%</span></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3">Adobe Ilustrator</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar"
-                                style="width: 80%;" aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"><span>80%</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of Skills sections -->
+  /* ===================== TIMELINE NAV ===================== */
+  #timeline-nav{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+    background:rgba(11,14,17,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .tl-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 32px;
+    max-width:1100px;
+    margin:0 auto;
+  }
+  .tl-brand{
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:0.05em;
+    color:var(--fg);
+  }
+  .tl-brand span{color:var(--amber);}
+  .tl-code{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--fg-dim);
+    letter-spacing:0.05em;
+  }
+  .tl-track-outer{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 32px 12px;
+  }
+  .tl-track{
+    position:relative;
+    height:26px;
+    display:flex;
+    align-items:center;
+  }
+  .tl-line{
+    position:absolute;
+    left:0; right:0; top:50%;
+    height:1px;
+    background:var(--line-strong);
+    transform:translateY(-50%);
+  }
+  .tl-progress{
+    position:absolute;
+    left:0; top:50%;
+    height:1px;
+    background:var(--amber);
+    transform:translateY(-50%);
+    width:0%;
+    transition:width 0.1s linear;
+  }
+  .tl-markers{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+  }
+  .tl-marker{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    padding:4px;
+    font-family:var(--font-mono);
+  }
+  .tl-marker .tick{
+    width:1px;
+    height:8px;
+    background:var(--fg-faint);
+    transition:background 0.2s, height 0.2s;
+  }
+  .tl-marker .lbl{
+    font-size:10px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--fg-faint);
+    transition:color 0.2s;
+    white-space:nowrap;
+  }
+  .tl-marker .tc{
+    font-size:9px;
+    color:var(--fg-faint);
+    opacity:0.7;
+  }
+  .tl-marker.active .tick{background:var(--amber); height:12px;}
+  .tl-marker.active .lbl{color:var(--amber);}
+  .tl-playhead{
+    position:absolute;
+    top:50%;
+    width:9px; height:9px;
+    background:var(--amber);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    left:0%;
+    box-shadow:0 0 0 4px rgba(212,162,76,0.15);
+    transition:left 0.1s linear;
+  }
 
-        <!-- Portfolio section -->
-        <section id="portfolio" class="section">
-            <div class="container text-center">
-                <h2 class="text-center ">PORTOFOLIO</h2>
-                <p class="mb-3">Berikut adalah portofolio saya yang mencakup berbagai proyek di bidang pemrograman dan pengeditan</p>
-                <div class="row">
-                   
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/tangerang-web.png" alt
-                                class="img-fluid">
+  @media (max-width:680px){
+    .tl-marker .lbl{font-size:8.5px;}
+    .tl-marker .tc{display:none;}
+    .tl-top{padding:12px 20px;}
+    .tl-track-outer{padding:0 20px 10px;}
+  }
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="mt-4">Tangerang web</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Website ini adalah profil kota Tangerang yang dibuat dengan framework CodeIgniter 3 sebagai tugas pembelajaran. Isinya mencakup sejarah, tempat wisata, budaya, dan informasi relevan lainnya tentang kota Tangerang.</p>
-                                    </div>
-                                </div>
-                                
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <p></p>
-                                    <a
-                                        href="https://github.com/Chernoboysss/final-web-tangerang.git"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  /* ===================== HERO ===================== */
+  #hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    padding-top:110px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-grain{
+    position:absolute; inset:0;
+    pointer-events:none;
+    opacity:0.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .hero-inner{
+    position:relative;
+    display:grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap:56px;
+    align-items:end;
+    padding-bottom:64px;
+  }
+  .hero-name{
+    font-size:clamp(2.6rem, 7vw, 5.2rem);
+    line-height:0.98;
+    text-transform:uppercase;
+  }
+  .hero-role{
+    font-family:var(--font-mono);
+    font-size:clamp(13px,2vw,16px);
+    color:var(--fg-dim);
+    margin-top:20px;
+    max-width:46ch;
+  }
+  .hero-role b{color:var(--amber); font-weight:400;}
+  .hero-photo-block{
+    position:relative;
+  }
+  .hero-photo-frame{
+    position:relative;
+    border:1px solid var(--line-strong);
+    padding:10px;
+  }
+  .hero-photo-frame img{
+    width:100%;
+    filter:grayscale(35%) contrast(1.05);
+    aspect-ratio: 4/5;
+    object-fit:cover;
+  }
+  .rec-tag{
+    position:absolute;
+    top:22px; left:22px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.08em;
+    color:#fff;
+    background:rgba(0,0,0,0.55);
+    padding:4px 8px;
+  }
+  .rec-dot{
+    width:6px; height:6px; border-radius:50%;
+    background:#e35b4a;
+    animation:blink 1.4s infinite;
+  }
+  @keyframes blink{ 0%,100%{opacity:1;} 50%{opacity:0.25;} }
 
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/carsrent.jpg" alt
-                                class="img-fluid">
+  .hero-scroll-hint{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--fg-faint);
+    margin-top:40px;
+    letter-spacing:0.08em;
+  }
+  .hero-scroll-hint .bar{
+    width:1px; height:26px;
+    background:linear-gradient(var(--amber), transparent);
+  }
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="">Carsrent</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Web Transaksi Mobil ini dibuat dengan CodeIgniter 3 menggunakan pendekatan full-stack. Fitur utama meliputi login pengguna, pemesanan, dan pembookingan mobil untuk kebutuhan rental.</p>
-                                    </div>
-                                </div>
+  /* ===================== SECTION SHELL ===================== */
+  section.block{
+    padding:100px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .block-head{
+    display:grid;
+    grid-template-columns: 220px 1fr;
+    gap:40px;
+    margin-bottom:56px;
+  }
+  .block-head h2{
+    font-size:clamp(1.8rem,3.4vw,2.6rem);
+    text-transform:uppercase;
+  }
+  .block-head .intro{
+    color:var(--fg-dim);
+    max-width:60ch;
+    font-size:15px;
+  }
+  @media (max-width:800px){
+    .block-head{grid-template-columns:1fr;}
+  }
 
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <a
-                                        href="https://github.com/Chernoboysss/project-CarsRent.git"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  /* ===================== TENTANG ===================== */
+  .about-grid{
+    display:grid;
+    grid-template-columns: 220px 1fr;
+    gap:40px;
+  }
+  .about-text p{
+    font-size:16px;
+    color:var(--fg);
+    max-width:68ch;
+    margin-bottom:16px;
+  }
+  .about-text p:last-child{margin-bottom:0;}
+  .about-meta{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--fg-dim);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .about-meta div{border-top:1px solid var(--line); padding-top:10px;}
+  .about-meta div:first-child{border-top:none; padding-top:0;}
+  .about-meta b{color:var(--fg); font-weight:400; display:block; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--amber); margin-bottom:4px;}
+  @media (max-width:800px){
+    .about-grid{grid-template-columns:1fr; gap:24px;}
+  }
 
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/backend-shroomscan.png" alt
-                                class="img-fluid">
+  /* ===================== PENGALAMAN (clips) ===================== */
+  .clip{
+    display:grid;
+    grid-template-columns: 160px 1fr;
+    gap:32px;
+    padding:28px 0;
+    border-top:1px solid var(--line);
+    position:relative;
+  }
+  .clip:last-child{border-bottom:1px solid var(--line);}
+  .clip-range{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--fg-dim);
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .clip-range .in, .clip-range .out{
+    display:flex; gap:6px;
+  }
+  .clip-range .tag{color:var(--amber);}
+  .clip-body h3{
+    font-size:19px;
+    text-transform:none;
+    letter-spacing:0;
+    margin-bottom:4px;
+  }
+  .clip-org{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--teal);
+    margin-bottom:14px;
+  }
+  .clip-body ul{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .clip-body li{
+    font-size:14.5px;
+    color:var(--fg-dim);
+    padding-left:16px;
+    position:relative;
+  }
+  .clip-body li::before{
+    content:"";
+    position:absolute;
+    left:0; top:9px;
+    width:6px; height:1px;
+    background:var(--fg-faint);
+  }
+  @media (max-width:700px){
+    .clip{grid-template-columns:1fr; gap:12px;}
+  }
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="mt-2">Shroomscan</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Project backend Capstone Bangkit menggunakan Node.js dengan Hapi framework dan Prisma sebagai schema database. Saya bertanggung jawab mengembangkan backend</p>
-                                    </div>
-                                </div>
+  /* ===================== SKILL ===================== */
+  .skill-groups{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:48px;
+  }
+  .skill-cat .eyebrow{margin-bottom:16px;}
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .chip{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--fg);
+    border:1px solid var(--line-strong);
+    padding:9px 14px;
+    transition:border-color 0.2s, color 0.2s;
+  }
+  .chip:hover{border-color:var(--amber); color:var(--amber);}
+  @media (max-width:700px){
+    .skill-groups{grid-template-columns:1fr; gap:36px;}
+  }
 
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <a
-                                        href="https://github.com/Chernoboysss/backend-shroomscan.git"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/diva.png" alt
-                                class="img-fluid">
+  /* ===================== PORTOFOLIO ===================== */
+  .reel-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  }
+  .reel-card{
+    border:1px solid var(--line-strong);
+    background:var(--bg-card);
+    padding:28px 22px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    min-height:190px;
+    transition:transform 0.2s, border-color 0.2s;
+  }
+  .reel-card:hover{transform:translateY(-4px); border-color:var(--amber);}
+  .reel-card .tc{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--fg-faint);
+  }
+  .reel-card h3{
+    font-size:17px;
+    text-transform:none;
+    letter-spacing:0;
+  }
+  .reel-card p{
+    font-size:13px;
+    color:var(--fg-dim);
+    flex-grow:1;
+  }
+  .reel-card .go{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--amber);
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  @media (max-width:800px){
+    .reel-grid{grid-template-columns:1fr;}
+  }
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="mt-3">EdueunoiaID</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Project animasi sederhana ini dibuat menggunakan After Effects dan Adobe Premiere. Animasi tersebut berfungsi untuk menyampaikan fakta-fakta menarik seputar Islam atau fakta umum lainnya dengan cara yang kreatif dan mudah dipahami.</p>
-                                    </div>
-                                </div>
+  /* ===================== KONTAK ===================== */
+  #kontak{padding-bottom:60px; border-bottom:none;}
+  .kontak-inner{
+    display:grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap:40px;
+    align-items:start;
+  }
+  .kontak-cta h2{
+    font-size:clamp(2rem,5vw,3.4rem);
+    text-transform:uppercase;
+    line-height:1.02;
+    margin-bottom:20px;
+  }
+  .kontak-cta p{
+    color:var(--fg-dim);
+    max-width:50ch;
+    margin-bottom:28px;
+  }
+  .btn-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:0.05em;
+    color:#0b0e11;
+    background:var(--amber);
+    padding:14px 22px;
+    border:1px solid var(--amber);
+    transition:opacity 0.2s;
+  }
+  .btn-primary:hover{opacity:0.85;}
+  .kontak-list{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .kontak-list a, .kontak-list div{
+    font-family:var(--font-mono);
+    font-size:13px;
+    padding:14px 0;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    color:var(--fg);
+  }
+  .kontak-list a:hover{color:var(--amber);}
+  .kontak-list span:first-child{color:var(--fg-faint); text-transform:uppercase; font-size:11px; letter-spacing:0.08em;}
+  @media (max-width:800px){
+    .kontak-inner{grid-template-columns:1fr; gap:28px;}
+  }
 
+  footer{
+    padding:26px 0 40px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--fg-faint);
+    display:flex;
+    justify-content:space-between;
+    letter-spacing:0.04em;
+  }
+  @media (max-width:600px){
+    footer{flex-direction:column; gap:8px;}
+  }
 
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <a
-                                        href="https://www.youtube.com/@edueunoia"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in-view{
+    opacity:1;
+    transform:translateY(0);
+  }
+</style>
+</head>
+<body>
 
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/khaliqa.png" alt
-                                class="img-fluid">
+<nav id="timeline-nav">
+  <div class="tl-top">
+    <div class="tl-brand">MUHAMAD<span>_</span>FADILLAH.PROJ</div>
+    <div class="tl-code" id="tc-readout">00:00:00:00</div>
+  </div>
+  <div class="tl-track-outer">
+    <div class="tl-track">
+      <div class="tl-line"></div>
+      <div class="tl-progress" id="tl-progress"></div>
+      <div class="tl-markers" id="tl-markers">
+        <button class="tl-marker" data-target="hero"><span class="tick"></span><span class="lbl">Intro</span><span class="tc">00:00</span></button>
+        <button class="tl-marker" data-target="tentang"><span class="tick"></span><span class="lbl">Tentang</span><span class="tc">00:15</span></button>
+        <button class="tl-marker" data-target="pengalaman"><span class="tick"></span><span class="lbl">Pengalaman</span><span class="tc">00:35</span></button>
+        <button class="tl-marker" data-target="skill"><span class="tick"></span><span class="lbl">Skill</span><span class="tc">00:55</span></button>
+        <button class="tl-marker" data-target="portofolio"><span class="tick"></span><span class="lbl">Portofolio</span><span class="tc">01:10</span></button>
+        <button class="tl-marker" data-target="kontak"><span class="tick"></span><span class="lbl">Kontak</span><span class="tc">01:25</span></button>
+      </div>
+      <div class="tl-playhead" id="tl-playhead"></div>
+    </div>
+  </div>
+</nav>
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="mt-3">Khaliqa</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Project ini saya kerjakan menggunakan Adobe Premiere, After Effects, dan Photoshop,Saya bertanggung jawab penuh mulai dari proses editing, penyesuaian detail, hingga pengunggahan ke platform tujuan.</p>
-                                    </div>
-                                </div>
+<header id="hero">
+  <div class="hero-grain"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">Video Editor — Bogor, Indonesia</div>
+      <h1 class="hero-name">Muhamad<br>Fadillah</h1>
+      <p class="hero-role">Menyunting <b>footage mentah</b> jadi cerita yang enak ditonton — mulai dari cutting, color correction, audio sync, sampai render akhir. Premiere Pro, After Effects, DaVinci Resolve, CapCut PC.</p>
+      <div class="hero-scroll-hint"><span class="bar"></span> SCROLL UNTUK PUTAR TIMELINE</div>
+    </div>
+    <div class="hero-photo-block">
+      <div class="hero-photo-frame">
+        <span class="rec-tag"><span class="rec-dot"></span>REC</span>
+        <img src="assets/foto-profil.png" alt="Foto Muhamad Fadillah">
+      </div>
+    </div>
+  </div>
+</header>
 
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <a
-                                        href="https://www.youtube.com/@KhaliqaOfficial"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="img-wrapper">
-                            <img src="assets/imgs/albar.png" alt
-                                class="img-fluid">
+<main>
 
-                                <div class="portfolio-item">
-                                    <div class="description">
-                                        <h5 class="mt-3">Albar</h5>
-                                        <p class="text-justify" style="max-width: 300px; margin: 0 auto;">Project ini Saya bertugas sebagai admin sekaligus pembuat konten grafis untuk feed dan reels, mencakup desain kreatif yang menarik dan sesuai dengan kebutuhan platform.</p>
-                                    </div>
-                                </div>
+  <section class="block reveal" id="tentang">
+    <div class="wrap about-grid">
+      <div class="eyebrow">Tentang</div>
+      <div>
+        <div class="about-text">
+          <p>Lulusan D3 Sistem Informasi, Universitas Bina Sarana Informatika, dengan fokus karier sebagai video editor. Terbiasa mengerjakan proses editing dari awal sampai akhir: pemotongan footage, color correction dasar, audio editing, hingga penyusunan konten akhir.</p>
+          <p>Sering menangani video dokumentasi, konten media sosial, dan kebutuhan promosi — dengan tetap menjaga kualitas visual dan ketepatan waktu. Cepat belajar tools baru dan mudah beradaptasi dengan alur kerja tim.</p>
+        </div>
+        <div class="about-meta" style="margin-top:32px;">
+          <div><b>Lokasi</b>Bogor, Indonesia</div>
+          <div><b>Pendidikan</b>D3 Sistem Informasi — Universitas Bina Sarana Informatika (2022–2025)</div>
+          <div><b>Tools Utama</b>Adobe Premiere Pro · After Effects · DaVinci Resolve · CapCut PC</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                            <div class="overlay">
-                                <div class="overlay-infos">
-                                    <h5>Albar Instagram</h5>
-                                    <p>Admin dan membuat konten grafis di feed
-                                        dan reels</p>
-                                    <a
-                                        href="https://www.instagram.com/albar.offici/"><i
-                                            class="ti-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <section class="block reveal" id="pengalaman">
+    <div class="wrap">
+      <div class="block-head">
+        <div class="eyebrow">Pengalaman</div>
+      </div>
 
-                </div>
-            </div>
-        </section>
-        <!-- End of portfolio section -->
+      <div class="clip">
+        <div class="clip-range">
+          <span class="in"><span class="tag">IN</span> Jun 2026</span>
+          <span class="out"><span class="tag">OUT</span> Jun 2026</span>
+        </div>
+        <div class="clip-body">
+          <h3>Kameramen Event (FREELANCE)</h3>
+          <div class="clip-org">LENKA JUNIOR CUP PRIX 2026 Seri 1 — Sirkuit Sentul Karting</div>
+          <ul>
+            <li>Mengoperasikan kamera profesional untuk mendokumentasikan seluruh rangkaian perlombaan.</li>
+            <li>Mengambil foto dan video dengan memperhatikan komposisi, fokus, eksposur, dan stabilitas gambar.</li>
+            <li>Berkoordinasi dengan tim produksi agar momen penting terdokumentasi optimal.</li>
+            <li>Melakukan backup dan menyerahkan hasil dokumentasi ke tim editor untuk pascaproduksi.</li>
+          </ul>
+        </div>
+      </div>
 
-        <!-- Section of sertifikasi -->
-        <section class="achievement-section" id="sertifikasi">
-            <h2>SERTIFIKAT</h2>
-            <p>Telah meraih sertifikasi di bidang teknologi dan pengembangan
-                digital melalui berbagai pelatihan.</p>
-            <div class="certification-list">
+      <div class="clip">
+        <div class="clip-range">
+          <span class="in"><span class="tag">IN</span> Mei 2025</span>
+          <span class="out"><span class="tag">OUT</span> Jul 2026</span>
+        </div>
+        <div class="clip-body">
+          <h3>Staff Bagian Data dan Informasi</h3>
+          <div class="clip-org">Sekretariat Jenderal Potensi Pertahanan, Kementerian Pertahanan</div>
+          <ul>
+            <li>Mendokumentasikan kegiatan resmi melalui foto dan video dengan kamera profesional.</li>
+            <li>Mengedit video dokumentasi: pemotongan footage, color correction dasar, sinkronisasi audio, dan subtitle (Premiere Pro & DaVinci Resolve).</li>
+            <li>Mendesain materi publikasi berupa flyer menggunakan Adobe Photoshop.</li>
+            <li>Mengelola arsip foto dan video sebagai dokumentasi resmi instansi.</li>
+          </ul>
+        </div>
+      </div>
 
-                <a href="https://drive.google.com/file/d/1rjuIqK-EA6LQRLIUbi_heIRqyECudlHL/view?usp=sharing">
-                <div class="certification-item">
-                    <img src="assets/imgs/logo-elrahma.png" alt="El rahma">
-                    <div>
-                        <h4>Pelatihan Komputer Desain Grafis</h4>
-                        <p>El Rahma education centre</p>
-                    </div>
-                </div>
-                </a>
+      <div class="clip">
+        <div class="clip-range">
+          <span class="in"><span class="tag">IN</span> Mei 2024</span>
+          <span class="out"><span class="tag">OUT</span> Mei 2025</span>
+        </div>
+        <div class="clip-body">
+          <h3>Editor Video YouTube</h3>
+          <div class="clip-org">@KhaliqaOfficial</div>
+          <ul>
+            <li>Mengedit video long-form dan YouTube Shorts sesuai konsep konten (Premiere Pro, After Effects, DaVinci Resolve, CapCut PC).</li>
+            <li>Melakukan pengambilan gambar (shooting) untuk mendukung produksi.</li>
+            <li>Mendesain thumbnail yang menarik perhatian audiens menggunakan Adobe Photoshop.</li>
+            <li>Mengunggah video serta mengoptimasi judul, deskripsi, tag, dan thumbnail.</li>
+          </ul>
+        </div>
+      </div>
 
-                <a href="https://drive.google.com/file/d/1ll2QX9K5IIQhfu8wM0lmm_TviyNMKhiM/view?usp=sharing">
-                    <div class="certification-item">
-                        <img src="assets/imgs/logo-bnsp.png" alt="bnsp">
-                        <div>
-                            <h4>Pemprograman dan Pengembangan perangkat Lunak</h4>
-                            <p>Badan Nasional Sertifikasi Profesional (BNSP)</p>
-                        </div>
-                    </div>
-                </a>
+    </div>
+  </section>
 
-                <a href="https://drive.google.com/file/d/1ll2QX9K5IIQhfu8wM0lmm_TviyNMKhiM/view?usp=sharing">
-                    <div class="certification-item">
-                        <img src="assets/imgs/logo-digitalent.png" alt="digitalent">
-                        <div>
-                            <h4>Junior Web Developer</h4>
-                            <p>Digitalent Kominfo</p>
-                        </div>
-                    </div>
-                </a>
+  <section class="block reveal" id="skill">
+    <div class="wrap">
+      <div class="block-head">
+        <div class="eyebrow">Skill</div>
+        <p class="intro">Software dan kemampuan yang dipakai sehari-hari, dari proses shooting sampai render akhir.</p>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-cat">
+          <div class="eyebrow" style="margin-bottom:16px;">Editing & Desain</div>
+          <div class="chip-row">
+            <span class="chip">Adobe Premiere Pro</span>
+            <span class="chip">Adobe After Effects</span>
+            <span class="chip">DaVinci Resolve</span>
+            <span class="chip">CapCut PC</span>
+            <span class="chip">Adobe Photoshop</span>
+            <span class="chip">Adobe Illustrator</span>
+            <span class="chip">CorelDRAW</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="eyebrow" style="margin-bottom:16px;">Produksi & Lainnya</div>
+          <div class="chip-row">
+            <span class="chip">Pengoperasian Kamera</span>
+            <span class="chip">Color Grading</span>
+            <span class="chip">Editing Video</span>
+            <span class="chip">Troubleshooting Komputer Dasar</span>
+            <span class="chip">Adaptasi Teknologi Cepat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <a href="https://drive.google.com/file/d/1Kp-2CWO6LZQDne7-Kvb-fKGTpNqXQVPq/view?usp=sharing">
-                <div class="certification-item">
-                    <img src="assets/imgs/logo-bangkit.jpg" alt="Bangkit Academy">
-                    <div>
-                        <h4>Cloud Computing</h4>
-                        <p>Bangkit Academy Led By Google, Tokopedia, Gojek &
-                            Traveloka</p>
-                    </div>
-                </div>
-                </a>
+  <section class="block reveal" id="portofolio">
+    <div class="wrap">
+      <div class="block-head">
+        <div class="eyebrow">Portofolio</div>
+        <p class="intro">Kumpulan hasil kerja — video dokumentasi, konten media sosial, dan showreel.</p>
+      </div>
+      <div class="reel-grid">
+        <a class="reel-card" href="https://drive.google.com/drive/folders/1tIRuriJQa8d-ITXSicji6A4HrgYiaVcj?usp=sharing" target="_blank" rel="noopener">
+          <span class="tc">CLIP // 01</span>
+          <h3>Hasil Video — Google Drive</h3>
+          <p>Kumpulan lengkap hasil edit: dokumentasi instansi Resmi dan proyek pribadi.</p>
+          <span class="go">Buka Drive →</span>
+        </a>
+        <a class="reel-card" href="https://www.instagram.com/edueunoia" target="_blank" rel="noopener">
+          <span class="tc">CLIP // 02</span>
+          <h3>Instagram — Konten Edueunoia</h3>
+          <p>Reels dan potongan konten media sosial hasil editing.</p>
+          <span class="go">Buka Instagram →</span>
+        </a>
+        <a class="reel-card" href="https://www.youtube.com/@KhaliqaOfficial" target="_blank" rel="noopener">
+          <span class="tc">CLIP // 03</span>
+          <h3>Youtube — Konten Khaliqa</h3>
+          <p>Vlog Video Panjang hasil editing.</p>
+          <span class="go">Buka Youtube →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-                <a href="https://drive.google.com/file/d/1A1B7suL_7dghz-BfXLfYJbjZ9Oqw09MQ/view?usp=sharing">
-                <div class="certification-item">
-                    <img src="assets/imgs/logo-dicoding.jpg" alt="Dicoding">
-                    <div>
-                        <h4>Course Dicoding</h4>
-                        <p>Dicoding Indonesia</p>
-                    </div>
-                </div>
-                </a>
+  <section id="kontak">
+    <div class="wrap kontak-inner">
+      <div class="kontak-cta">
+        <div class="eyebrow" style="margin-bottom:18px;">Kontak</div>
+        <h2>Terbuka untuk <br>peluang kerja baru</h2>
+        <p>Siap bergabung sebagai video editor di tim atau perusahaan Anda — dari editing dokumentasi, konten media sosial, hingga materi promosi. Silakan hubungi untuk wawancara atau diskusi lebih lanjut.</p>
+        <a class="btn-primary" href="mailto:Mhmdfadillah1@gmail.com">Kirim Email →</a>
+      </div>
+      <div class="kontak-list">
+        <a href="mailto:Mhmdfadillah1@gmail.com"><span>Email</span><span>Mhmdfadillah1@gmail.com</span></a>
+        <a href="tel:+6289542838237"><span>Telepon</span><span>+62 895-4283-82937</span></a>
+        <a href="https://www.linkedin.com/in/muhamad-fadillah-15963b2ba" target="_blank" rel="noopener"><span>LinkedIn</span><span>muhamad-fadillah</span></a>
+        <div><span>Lokasi</span><span>Bogor, Indonesia</span></div>
+      </div>
+    </div>
+  </section>
 
-                <a href="https://drive.google.com/file/d/1r-aGzwW55j2XeMcaN-8axWZCk77zR8Gn/view?usp=sharing">
-                <div class="certification-item">
-                    <img src="assets/imgs/logo-coursera.png" alt="Coursera">
-                    <div>
-                        <h4>Course Coursera</h4>
-                        <p>Coursera Inc</p>
-                    </div>
-                </div>
-                </a>
+  <footer class="wrap">
+    <span>© 2026 Muhamad Fadillah</span>
+  </footer>
 
-                <a href="https://drive.google.com/file/d/11HXdgJdO5UkQ5r_tOEwC8mdfH48sZNRY/view?usp=sharing">
-                <div class="certification-item">
-                    <img src="assets/imgs/logo-kemhan.png" alt="Kemhan">
-                    <div>
-                        <h4>Sertifikat Magang</h4>
-                        <p>Direktorat Jenderal Potensi Pertahanan Kementerian Pertahanan</p>
-                    </div>
-                </div>
-                </a>
+</main>
 
-            </div>
-        </section>
-        <!-- End section of sertifikasi -->
+<script>
+(function(){
+  const markers = Array.from(document.querySelectorAll('.tl-marker'));
+  const sections = markers.map(m => document.getElementById(m.dataset.target));
+  const progress = document.getElementById('tl-progress');
+  const playhead = document.getElementById('tl-playhead');
+  const tcReadout = document.getElementById('tc-readout');
+  const track = document.getElementById('tl-markers');
 
-        <!-- Page Footer -->
-        <footer class="page-footer">
-            <div class="container mt-5">
-                <div class="footer-content">
+  markers.forEach(m => {
+    m.addEventListener('click', () => {
+      const el = document.getElementById(m.dataset.target);
+      if(el) el.scrollIntoView({behavior: 'smooth'});
+    });
+  });
 
-                    <div class="footer-col">
-                        <h3>Muhamad Fadillah</h3>
-                        <p style="color: #ff7a57;">
-                            Mhmdfadillah1@gmail.com<br>
-                            Jl . Cibuntu Kebon jeruk Ciampea<br>
-                            Bogor
-                        </p>
-                    </div>
+  function toTimecode(fraction){
+    const totalFrames = Math.floor(fraction * 90 * 25); // fake 90s @25fps scale
+    const totalSeconds = Math.floor(totalFrames / 25);
+    const frames = totalFrames % 25;
+    const mm = Math.floor(totalSeconds / 60).toString().padStart(2,'0');
+    const ss = (totalSeconds % 60).toString().padStart(2,'0');
+    const ff = frames.toString().padStart(2,'0');
+    return `00:${mm}:${ss}:${ff}`;
+  }
 
-    
-                    <div class="footer-col">
-                        <ul class="ps-5">
-                            <a href="#home" class="nav-link"><li>Home</li></a>
-                            <a href="#about " class="nav-link"><li>Tentang saya</li></a>
-                            <a href="#skilss " class="nav-link"><li>Skill</li></a>
-                            <a href="#portfolio " class="nav-link"><li>Portofolio</li></a>
-                            <a href="#sertifikasi " class="nav-link"><li>Sertifikasi</li></a>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/tamami.albar/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/mhmd.fdlhh"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@fadilajadeeh?lang=id-ID"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://github.com/Chernoboysss"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/muhamad-fadillah-15963b2ba/"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="footer-bottom">
-                    <p>© 2025 Muhamad Fadillah</p>
-                </div>
-            </div>
-        </footer>
-        <!-- End of page footer -->
+  function onScroll(){
+    const doc = document.documentElement;
+    const scrollTop = window.scrollY;
+    const max = doc.scrollHeight - window.innerHeight;
+    const fraction = max > 0 ? Math.min(1, Math.max(0, scrollTop / max)) : 0;
 
-        <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-        <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-        <!-- bootstrap 3 affix -->
-        <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    progress.style.width = (fraction * 100) + '%';
+    playhead.style.left = (fraction * 100) + '%';
+    tcReadout.textContent = toTimecode(fraction);
 
-        <!-- steller js -->
-        <script src="assets/js/steller.js"></script>
+    let activeIndex = 0;
+    sections.forEach((sec, i) => {
+      if(sec){
+        const rect = sec.getBoundingClientRect();
+        if(rect.top <= window.innerHeight * 0.4){
+          activeIndex = i;
+        }
+      }
+    });
+    markers.forEach((m,i) => m.classList.toggle('active', i === activeIndex));
+  }
 
-    </body>
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in-view'));
+  }
+})();
+</script>
+
+</body>
 </html>
-
